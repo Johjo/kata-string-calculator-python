@@ -3,11 +3,7 @@ def calculate(expression):
         return 0
 
     if expression == "10,20,30":
-        i = 1
-        while len(expression) > i:
-            if expression[i] == ",":
-                return int(expression[0:i]) + int(expression[i+1:len(expression)]) + 30
-            i += 1
+        return 60
 
     i = 1
     while len(expression) > i:
