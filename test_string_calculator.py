@@ -9,7 +9,7 @@ def calculate(expression):
         start = 0
         end = 2
         total += int(expression[start: end])
-        start = 3
+        start = end + 1
         end = 5
         total += int(expression[start: end])
         start = 5
