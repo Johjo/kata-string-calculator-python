@@ -10,13 +10,13 @@ def calculate(expression):
         start = 5
         total += int(expression[start + 1: len(expression)])
         return total
-
-    i = 1
-    while len(expression) > i:
-        if expression[i] == ",":
-            total = int(expression[0:i]) + int(expression[i + 1:len(expression)])
-            return total
-        i += 1
+    else:
+        i = 1
+        while len(expression) > i:
+            if expression[i] == ",":
+                total = int(expression[0:i]) + int(expression[i + 1:len(expression)])
+                return total
+            i += 1
 
     total += int(expression[start + 1: len(expression)])
     return total
