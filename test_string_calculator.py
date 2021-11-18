@@ -13,8 +13,7 @@ def calculate(expression):
         while len(expression) > i:
             if expression[i] == ",":
                 start = i
-                total = int(expression[0:i]) + int(expression[start + 1:len(expression)])
-                return total
+                total = int(expression[0:i])
             i += 1
 
     total += int(expression[start + 1: len(expression)])
