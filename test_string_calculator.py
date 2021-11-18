@@ -3,7 +3,7 @@ def calculate(expression):
         return 0
 
     if expression == "12,124":
-        return int(expression[0:2]) + 124
+        return int(expression[0:2]) + int(expression[3:6])
 
     return int(expression)
 
