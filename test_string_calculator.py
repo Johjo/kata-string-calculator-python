@@ -20,7 +20,7 @@ def calculate(expression):
                 start = 0
                 end = i
                 total = int(expression[start: end])
-                start = i
+                start = end
             i += 1
 
     total += int(expression[start + 1: len(expression)])
