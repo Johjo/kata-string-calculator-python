@@ -17,9 +17,9 @@ def calculate(expression):
             return total
         i += 1
 
-    i = -1
+    start = -1
 
-    total += int(expression[i + 1: len(expression)])
+    total += int(expression[start + 1: len(expression)])
     return total
 
 
