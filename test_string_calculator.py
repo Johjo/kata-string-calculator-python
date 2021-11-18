@@ -7,7 +7,8 @@ def calculate(expression):
 
     if expression == "10,20,30":
         start = 0
-        total += int(expression[start: 2])
+        end = 2
+        total += int(expression[start: end])
         start = 3
         total += int(expression[start: 5])
         start = 5
