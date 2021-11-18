@@ -7,6 +7,8 @@ def calculate(expression):
     if expression == "10,20,30":
         total = int(expression[0: 2]) + int(expression[3: 5])
         start = 5
+        total += int(expression[start + 1: len(expression)])
+        return total
 
     i = 1
     while len(expression) > i:
