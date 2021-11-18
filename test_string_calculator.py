@@ -1,4 +1,6 @@
 def calculate(expression):
+    if expression == "":
+        return 0
     if expression == "54":
         return 54
     return 0
