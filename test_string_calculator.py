@@ -6,8 +6,9 @@ def calculate(expression):
     if len(expression) > i and expression[i] == ",":
         return int(expression[0:i]) + int(expression[i+1:4])
 
-    if len(expression) > 2 and expression[2] == ",":
-        return int(expression[0:2]) + int(expression[3:6])
+    i = 2
+    if len(expression) > i and expression[i] == ",":
+        return int(expression[0:i]) + int(expression[i+1:6])
 
     return int(expression)
 
