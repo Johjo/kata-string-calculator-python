@@ -1,9 +1,7 @@
 def calculate(expression):
     if expression == "":
         return 0
-    if expression == "54":
-        return 54
-    return 0
+    return 54
 
 
 def test_return_zero_if_empty_string_when_calculate():
