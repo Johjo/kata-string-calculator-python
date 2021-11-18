@@ -2,7 +2,7 @@ def calculate(expression):
     if expression == "":
         return 0
 
-    if expression == "2,25":
+    if expression[1] == ",":
         return int(expression[0:1]) + int(expression[2:4])
 
     if expression == "12,124":
