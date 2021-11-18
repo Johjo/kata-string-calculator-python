@@ -10,6 +10,10 @@ def calculate(expression):
     if len(expression) > i and expression[i] == ",":
         return int(expression[0:i]) + int(expression[i+1:len(expression)])
 
+    i = 3
+    if len(expression) > i and expression[i] == ",":
+        return int(expression[0:i]) + int(expression[i+1:len(expression)])
+
     return int(expression)
 
 
