@@ -3,7 +3,7 @@ def calculate(expression):
         return 0
 
     total = 0
-    start = -1
+    start = 0
 
     if expression == "10,20,30":
         start = 0
@@ -20,10 +20,10 @@ def calculate(expression):
                 start = 0
                 end = i
                 total = int(expression[start: end])
-                start = end
+                start = end + 1
             i += 1
 
-    total += int(expression[start + 1: len(expression)])
+    total += int(expression[start: len(expression)])
     return total
 
 
