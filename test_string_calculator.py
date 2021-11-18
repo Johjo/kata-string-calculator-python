@@ -2,7 +2,7 @@ def calculate(expression):
     if expression == "":
         return 0
 
-    if expression[1] == ",":
+    if len(expression) > 1 and expression[1] == ",":
         return int(expression[0:1]) + int(expression[2:4])
 
     if len(expression) > 2 and expression[2] == ",":
