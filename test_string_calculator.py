@@ -12,7 +12,7 @@ def calculate(expression):
         start = end + 1
         end = 5
         total += int(expression[start: end])
-        start = 5
+        start = end + 1
     else:
         i = 1
         while len(expression) > i:
