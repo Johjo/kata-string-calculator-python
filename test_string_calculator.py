@@ -27,3 +27,4 @@ def test_return_sum_if_two_numbers_when_calculate():
     assert calculate("2,25") == 27
     assert calculate("3,25") == 28
     assert calculate("30,25") == 55
+    assert calculate("300,30") == 330
