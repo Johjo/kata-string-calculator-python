@@ -15,8 +15,8 @@ def calculate(expression):
         i += 1
 
     i = -1
-    total += int(expression[i + 1: len(expression)])
-    return total
+
+    return int(expression[i + 1: len(expression)])
 
 
 def test_return_zero_if_empty_string_when_calculate():
