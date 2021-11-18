@@ -3,8 +3,9 @@ def calculate(expression):
         return 0
 
     i = 1
-    if len(expression) > i and expression[i] == ",":
-        return int(expression[0:i]) + int(expression[i+1:len(expression)])
+    if len(expression) > i:
+        if expression[i] == ",":
+            return int(expression[0:i]) + int(expression[i+1:len(expression)])
     i += 1
 
     if len(expression) > i and expression[i] == ",":
